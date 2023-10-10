@@ -1,0 +1,16 @@
+<!-- <app-child 
+[getMsgFromParent] = "msgForChild"
+(msgFromChild)="getMsgFromChild($event)"
+>
+
+</app-child>
+
+<p class="alert alert-info" [innerHtml]= "msgFromChild">
+    
+</p>  -->
+
+
+
+<input type="text" class="form-control" #data placeholder="TODO">
+<button class="btn btn-danger m-2" 
+(click)="onClick(data)" type="submit">ADD</button>

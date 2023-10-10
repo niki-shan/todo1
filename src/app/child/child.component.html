@@ -1,0 +1,17 @@
+
+<!-- 
+<button class="btn btn-warniteming"
+(click)="sendMsg()">
+sendmsg
+</button> -->
+
+
+<ul class="list-group" *ngIf="getArray.length > 0; else Empty" >
+    <li class="list-group-item" *ngFor = "let array of getArray">
+          {{array}}
+    </li>
+</ul>
+<ng-template #Empty>
+    <li class="list-group-item" >Empty</li>
+        
+</ng-template>
